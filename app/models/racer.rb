@@ -1,5 +1,6 @@
 class Racer
   include Mongoid::Document
+  include Mongoid::Timestamps
 
   store_in collection: "racer1"
 
