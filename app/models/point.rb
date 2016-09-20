@@ -32,6 +32,12 @@ class Point
     end
   end
 
-
+  def self.evolve(object)
+    case object
+    when Point then object.mongoize
+    else
+      object
+    end
+  end
 
 end
