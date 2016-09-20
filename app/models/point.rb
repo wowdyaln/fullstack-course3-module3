@@ -6,7 +6,14 @@ class Point
     @latitude = lat
   end
 
+  def mongoize
+    {
+      type:"Point", coordinates:[@longitude, @latitude]
+    }
+  end
 
+
+  
 
 
 end
