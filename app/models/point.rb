@@ -12,8 +12,10 @@ class Point
     }
   end
 
+  def self.demongoize(object)
+    Point.new(object[:coordinates][0], object[:coordinates][1])
+  end
 
-  
 
 
 end
