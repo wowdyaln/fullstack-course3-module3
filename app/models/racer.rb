@@ -7,6 +7,8 @@ class Racer
   embeds_one :primary_address, class_name: "Address", as: :addressable
   has_one :medical_record
 
+  validates_presence_of :first_name
+  validates_presence_of :last_name
 
   # has_many :races, class_name: "Entrant"
     def races
