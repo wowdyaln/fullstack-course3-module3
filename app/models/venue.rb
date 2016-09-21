@@ -3,4 +3,5 @@ class Venue
   field :name, type: String
 
   embeds_one :address, class_name: "Address", as: :addressable
+  has_many :contests
 end
