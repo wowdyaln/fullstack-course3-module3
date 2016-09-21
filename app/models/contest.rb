@@ -5,7 +5,7 @@ class Contest
   field :name, type: String
   field :date, type: Date
 
-  belongs_to :venue, class_name: "Venue"
+  belongs_to :venue
   embeds_many :entrants
   has_and_belongs_to_many :judges
 end
