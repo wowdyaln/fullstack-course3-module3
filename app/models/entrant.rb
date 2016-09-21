@@ -5,7 +5,7 @@ class Entrant
   field :group, type: String
   field :secs, type: Float
 
-  belongs_to :racer
+  belongs_to :racer, validate: true
   embedded_in :contest
 
   before_create do |doc|
