@@ -5,6 +5,6 @@ class MedicalRecord
 
   field :conditions, type: Array
 
-  belongs_to :racer
+  belongs_to :racer dependent: :destory
 
 end

@@ -7,4 +7,5 @@ class Contest
 
   belongs_to :venue, class_name: "Venue"
   embeds_many :entrants
+  has_and_belongs_to_many :judges
 end
